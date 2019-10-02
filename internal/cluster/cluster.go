@@ -22,8 +22,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/beer-bar/stolon/internal/common"
-	util "github.com/beer-bar/stolon/internal/postgresql"
+	"github.com/storintlabs/stolon/internal/common"
+	util "github.com/storintlabs/stolon/internal/postgresql"
 	"github.com/mitchellh/copystructure"
 )
 

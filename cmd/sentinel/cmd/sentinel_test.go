@@ -24,8 +24,8 @@ import (
 	"reflect"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/beer-bar/stolon/internal/cluster"
-	"github.com/beer-bar/stolon/internal/common"
+	"github.com/storintlabs/stolon/internal/cluster"
+	"github.com/storintlabs/stolon/internal/common"
 )
 
 var curUID int

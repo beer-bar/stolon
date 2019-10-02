@@ -15,7 +15,7 @@
 package main
 
 import (
-	"github.com/beer-bar/stolon/cmd/stolonctl/cmd"
+	"github.com/storintlabs/stolon/cmd/stolonctl/cmd"
 )
 
 func main() {

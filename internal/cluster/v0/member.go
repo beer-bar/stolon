@@ -14,7 +14,7 @@
 
 package v0
 
-import "github.com/beer-bar/stolon/internal/common"
+import "github.com/storintlabs/stolon/internal/common"
 
 type KeepersInfo map[string]*KeeperInfo
 

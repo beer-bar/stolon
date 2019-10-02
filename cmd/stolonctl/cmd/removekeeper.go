@@ -17,8 +17,8 @@ package cmd
 import (
 	"context"
 
-	cmdcommon "github.com/beer-bar/stolon/cmd"
-	"github.com/beer-bar/stolon/internal/cluster"
+	cmdcommon "github.com/storintlabs/stolon/cmd"
+	"github.com/storintlabs/stolon/internal/cluster"
 	"github.com/spf13/cobra"
 )
 

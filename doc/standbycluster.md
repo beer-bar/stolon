@@ -63,7 +63,7 @@ The other keepers will become standby keepers of the cluster master keeper.
 
 ### Additional options
 
-You can specify additional options in the `standbySettings` (for all the options see the [cluster spec doc](https://github.com/beer-bar/stolon/blob/master/doc/cluster_spec.md#standbysettings))
+You can specify additional options in the `standbySettings` (for all the options see the [cluster spec doc](https://github.com/storintlabs/stolon/blob/master/doc/cluster_spec.md#standbysettings))
 
 For example you can specify a primary slot name to use for syncing with the master and a wal apply delay
 

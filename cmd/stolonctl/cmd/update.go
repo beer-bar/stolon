@@ -21,9 +21,9 @@ import (
 	"io/ioutil"
 	"os"
 
-	cmdcommon "github.com/beer-bar/stolon/cmd"
-	"github.com/beer-bar/stolon/internal/cluster"
-	"github.com/beer-bar/stolon/internal/store"
+	cmdcommon "github.com/storintlabs/stolon/cmd"
+	"github.com/storintlabs/stolon/internal/cluster"
+	"github.com/storintlabs/stolon/internal/store"
 
 	"github.com/spf13/cobra"
 	"k8s.io/apimachinery/pkg/util/strategicpatch"

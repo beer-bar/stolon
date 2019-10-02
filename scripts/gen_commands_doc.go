@@ -18,10 +18,10 @@ import (
 	"fmt"
 	"os"
 
-	keepercmd "github.com/beer-bar/stolon/cmd/keeper/cmd"
-	proxycmd "github.com/beer-bar/stolon/cmd/proxy/cmd"
-	sentinelcmd "github.com/beer-bar/stolon/cmd/sentinel/cmd"
-	stolonctlcmd "github.com/beer-bar/stolon/cmd/stolonctl/cmd"
+	keepercmd "github.com/storintlabs/stolon/cmd/keeper/cmd"
+	proxycmd "github.com/storintlabs/stolon/cmd/proxy/cmd"
+	sentinelcmd "github.com/storintlabs/stolon/cmd/sentinel/cmd"
+	stolonctlcmd "github.com/storintlabs/stolon/cmd/stolonctl/cmd"
 
 	"github.com/spf13/cobra/doc"
 )

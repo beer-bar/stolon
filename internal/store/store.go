@@ -19,7 +19,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/beer-bar/stolon/internal/cluster"
+	"github.com/storintlabs/stolon/internal/cluster"
 )
 
 var (

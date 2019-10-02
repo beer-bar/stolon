@@ -29,8 +29,8 @@ import (
 	"github.com/docker/leadership"
 	"github.com/docker/libkv"
 	libkvstore "github.com/docker/libkv/store"
-	"github.com/beer-bar/stolon/internal/cluster"
-	"github.com/beer-bar/stolon/internal/common"
+	"github.com/storintlabs/stolon/internal/cluster"
+	"github.com/storintlabs/stolon/internal/common"
 )
 
 // Backend represents a KV Store Backend

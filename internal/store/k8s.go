@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/beer-bar/stolon/internal/cluster"
-	"github.com/beer-bar/stolon/internal/util"
+	"github.com/storintlabs/stolon/internal/cluster"
+	"github.com/storintlabs/stolon/internal/util"
 
 	"k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"

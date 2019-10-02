@@ -33,11 +33,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/beer-bar/stolon/internal/cluster"
-	"github.com/beer-bar/stolon/internal/common"
-	pg "github.com/beer-bar/stolon/internal/postgresql"
-	"github.com/beer-bar/stolon/internal/store"
-	"github.com/beer-bar/stolon/internal/util"
+	"github.com/storintlabs/stolon/internal/cluster"
+	"github.com/storintlabs/stolon/internal/common"
+	pg "github.com/storintlabs/stolon/internal/postgresql"
+	"github.com/storintlabs/stolon/internal/store"
+	"github.com/storintlabs/stolon/internal/util"
 
 	_ "github.com/lib/pq"
 	"github.com/satori/go.uuid"
