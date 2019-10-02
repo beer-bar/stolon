@@ -24,9 +24,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sorintlab/stolon/internal/cluster"
-	"github.com/sorintlab/stolon/internal/common"
-	"github.com/sorintlab/stolon/internal/store"
+	"github.com/beer-bar/stolon/internal/cluster"
+	"github.com/beer-bar/stolon/internal/common"
+	"github.com/beer-bar/stolon/internal/store"
 
 	"github.com/satori/go.uuid"
 )

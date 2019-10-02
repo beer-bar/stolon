@@ -21,9 +21,9 @@ import (
 	"sort"
 	"text/tabwriter"
 
-	cmdcommon "github.com/sorintlab/stolon/cmd"
-	"github.com/sorintlab/stolon/internal/cluster"
-	"github.com/sorintlab/stolon/internal/store"
+	cmdcommon "github.com/beer-bar/stolon/cmd"
+	"github.com/beer-bar/stolon/internal/cluster"
+	"github.com/beer-bar/stolon/internal/store"
 
 	"github.com/spf13/cobra"
 )

@@ -17,7 +17,7 @@ package cmd
 import (
 	"encoding/json"
 
-	cmdcommon "github.com/sorintlab/stolon/cmd"
+	cmdcommon "github.com/beer-bar/stolon/cmd"
 	"github.com/spf13/cobra"
 )
 

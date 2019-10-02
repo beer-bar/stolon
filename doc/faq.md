@@ -12,7 +12,7 @@ We are open to alternative solutions (PRs are welcome) like using haproxy if the
 
 ## Does the stolon proxy sends read-only requests to standbys?
 
-Currently the proxy redirects all requests to the master. There is a [feature request](https://github.com/sorintlab/stolon/issues/132) for using the proxy also for standbys but it's low in the priority list.
+Currently the proxy redirects all requests to the master. There is a [feature request](https://github.com/beer-bar/stolon/issues/132) for using the proxy also for standbys but it's low in the priority list.
 
 If your application want to query the hot standbys, currently you can read the standby dbs and their status form the cluster data directly from the store (but be warned that this isn't meant to be stable).
 

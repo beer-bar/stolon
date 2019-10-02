@@ -22,9 +22,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/beer-bar/stolon/internal/common"
+	util "github.com/beer-bar/stolon/internal/postgresql"
 	"github.com/mitchellh/copystructure"
-	"github.com/sorintlab/stolon/internal/common"
-	util "github.com/sorintlab/stolon/internal/postgresql"
 )
 
 func Uint16P(u uint16) *uint16 {
@@ -204,7 +204,11 @@ type ClusterSpec struct {
 	RequestTimeout *Duration `json:"requestTimeout,omitempty"`
 	// Interval to wait for a db to be converged to the required state when
 	// no long operation are expected.
-	ConvergenceTimeout *Duration `json:"convergenceTimeout,omitempty"`
+	// Proxy check interval
+	ProxyCheckInterval *Duration `json:"proxyCheckInterval,omitempty"`
+	// Proxy check timeout interval
+	ProxyTimeoutInterval *Duration `json:"proxyTimeoutInterval,omitempty"`
+	ConvergenceTimeout   *Duration `json:"convergenceTimeout,omitempty"`
 	// Interval to wait for a db to be initialized (doing a initdb)
 	InitTimeout *Duration `json:"initTimeout,omitempty"`
 	// Interval to wait for a db to be synced with a master

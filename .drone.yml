@@ -1,0 +1,23 @@
+kind: pipeline
+name: build
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+  - name: build
+    image: golang
+    commands:
+      - ./build
+      - tar -cf custom-stolon-${DRONE_COMMIT_MESSAGE}.tar.gz .
+
+  - name: publish
+    image: plugins/github-release
+    settings:
+      api_key:
+        from_secret: GITHUB
+      title: ${DRONE_COMMIT_MESSAGE}
+      files: custom-stolon-${DRONE_COMMIT_MESSAGE}.tar.gz
+    when:
+      event: tag

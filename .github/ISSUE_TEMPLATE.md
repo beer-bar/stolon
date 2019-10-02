@@ -1,4 +1,4 @@
-<!-- **NOTE:** Please submit only bug reports or RFE via the issue tracker. For other question or if unsure ask on the mailing list or gitter channel: https://github.com/sorintlab/stolon#contacts -->
+<!-- **NOTE:** Please submit only bug reports or RFE via the issue tracker. For other question or if unsure ask on the mailing list or gitter channel: https://github.com/beer-bar/stolon#contacts -->
 
 ### Submission type
 

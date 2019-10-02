@@ -30,7 +30,7 @@ if [ $PWD != $BASEDIR ]; then
 	cd $BASEDIR
 fi
 
-ORG_PATH="github.com/sorintlab"
+ORG_PATH="github.com/beer-bar"
 REPO_PATH="${ORG_PATH}/stolon"
 
 # Hack to be sure that:
