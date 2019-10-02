@@ -329,6 +329,12 @@ func (os *ClusterSpec) WithDefaults() *ClusterSpec {
 	if s.RequestTimeout == nil {
 		s.RequestTimeout = &Duration{Duration: DefaultRequestTimeout}
 	}
+	if s.ProxyTimeoutInterval == nil {
+		s.ProxyTimeoutInterval = &Duration{Duration: DefaultProxyTimeoutInterval}
+	}
+	if s.ProxyCheckInterval == nil {
+		s.ProxyCheckInterval = &Duration{Duration: DefaultProxyCheckInterval}
+	}
 	if s.ConvergenceTimeout == nil {
 		s.ConvergenceTimeout = &Duration{Duration: DefaultConvergenceTimeout}
 	}
@@ -390,6 +396,12 @@ func (os *ClusterSpec) Validate() error {
 	}
 	if s.RequestTimeout.Duration < 0 {
 		return fmt.Errorf("requestTimeout must be positive")
+	}
+	if s.ProxyTimeoutInterval.Duration < 0 {
+		return fmt.Errorf("proxyTimeoutInterval must be positive")
+	}
+	if s.ProxyCheckInterval.Duration < 0 {
+		return fmt.Errorf("proxyCheckInterval must be positive")
 	}
 	if s.ConvergenceTimeout.Duration < 0 {
 		return fmt.Errorf("convergenceTimeout must be positive")
