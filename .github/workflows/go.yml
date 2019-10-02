@@ -17,16 +17,13 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Build
-      run: ./build && tar -zcvf custom-stolon-${DRONE_COMMIT_MESSAGE}.tar.gz bin
-  
-    - name: where
-      run: ls && file custom-stolon-${DRONE_COMMIT_MESSAGE}.tar.gz
+      run: ./build && tar -zcvf custom-stolon.tar.gz bin
 
     - name: Release
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
       with:
-        files: custom-stolon-${DRONE_COMMIT_MESSAGE}.tar.gz
+        files: custom-stolon.tar.gz
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB }}
       
